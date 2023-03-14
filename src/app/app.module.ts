@@ -31,7 +31,10 @@ import { MessagesComponent } from './messages/messages.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+    InMemoryDataService, { dataEncapsulation: false }
+    )
   ],
 
  
